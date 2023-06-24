@@ -4,13 +4,33 @@ $border: 4px solid red;
 $padding: 0;
 $margin: 0;
 $height: 200px;
+$mainfontsize: 1.2em;
 
 * {
     padding: $padding;
     margin: $margin;
 }
 
+@mixin font ($color: #000, $fontW) {
+    font-size: $mainfontsize;
+    font-weight: $fontW;
+    font-family: 'Arial', sans-serif;
+    color: $color;
+}
+
+@mixin font2 {
+    font-size: $mainfontsize;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: red;
+}
+
+@mixin padd($padd...) {
+    padding: $padd;
+}
+
 .block:not(.first) {
+    @include padd(20px 40px);
     background: $bgColor;
     height: $height;
     margin-bottom: 20px;
@@ -22,12 +42,14 @@ $height: 200px;
         list-style: none;
 
         li {
+            @include font2;
             color: wheat;
             margin-right: 10px;
         }
     }
     
     a {
+        @include font($color: #333, $fontW: bold);
         text-decoration: none;
     }
 }

@@ -4,6 +4,7 @@
 }
 
 .block:not(.first) {
+  padding: 20px 40px;
   background: red;
   height: 200px;
   margin-bottom: 20px;
@@ -16,9 +17,17 @@
   list-style: none;
 }
 #central-block ul li {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  color: red;
   color: wheat;
   margin-right: 10px;
 }
 #central-block a {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  color: #333;
   text-decoration: none;
 }
