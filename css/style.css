@@ -3,10 +3,23 @@
   margin: 0;
 }
 
+a {
+  color: #000;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  color: green;
+}
+a:visited {
+  color: yellow;
+}
+
 .block:not(.first) {
   padding: 20px 40px;
   background: red;
-  height: 200px;
+  height: 500px;
   margin-bottom: 20px;
 }
 
@@ -23,11 +36,4 @@
   color: red;
   color: wheat;
   margin-right: 10px;
-}
-#central-block a {
-  font-size: 1.2em;
-  font-weight: bold;
-  font-family: "Arial", sans-serif;
-  color: #333;
-  text-decoration: none;
 }
