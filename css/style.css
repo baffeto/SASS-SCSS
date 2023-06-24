@@ -4,7 +4,21 @@
 }
 
 .block:not(.first) {
-  background: #000;
+  background: red;
   height: 200px;
   margin-bottom: 20px;
+}
+
+#central-block {
+  padding: 30px;
+}
+#central-block ul {
+  list-style: none;
+}
+#central-block ul li {
+  color: wheat;
+  margin-right: 10px;
+}
+#central-block a {
+  text-decoration: none;
 }
