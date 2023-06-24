@@ -7,7 +7,7 @@ a {
   color: #000;
 }
 a:hover {
-  color: blue;
+  color: black;
 }
 a:active {
   color: green;
@@ -30,10 +30,23 @@ a:visited {
   list-style: none;
 }
 #central-block ul li {
-  font-size: 1.2em;
-  font-weight: bold;
-  font-family: "Arial", sans-serif;
-  color: red;
   color: wheat;
   margin-right: 10px;
+  width: 25%;
+}
+
+#grid {
+  float: left;
+  width: 100%;
+}
+#grid > div {
+  float: left;
+  background-color: #ce3d3d;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  height: 150px;
+  width: 10%;
+}
+#grid > div:nth-child(7n) {
+  margin-right: 0;
 }
