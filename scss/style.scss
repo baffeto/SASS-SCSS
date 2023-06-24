@@ -1,0 +1,17 @@
+$bgColor: #000;
+$blockWidth: 30%;
+$border: 4px solid red;
+$padding: 0;
+$margin: 0;
+$height: 200px;
+
+* {
+    padding: $padding;
+    margin: $margin;
+}
+
+.block:not(.first) {
+    background: $bgColor;
+    height: $height;
+    margin-bottom: 20px;
+}
